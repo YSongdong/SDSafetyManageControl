@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SDTodaySignCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="152" height="119"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="152" height="119"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sc_ico_add" translatesAutoresizingMaskIntoConstraints="NO" id="8QF-xC-AmL">
+                        <rect key="frame" x="0.0" y="0.0" width="152" height="119"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIB-qQ-1te">
+                        <rect key="frame" x="135" y="0.0" width="17" height="22"/>
+                        <state key="normal" image="sc_ico_delete"/>
+                        <connections>
+                            <action selector="delBtnAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="r35-ob-P2k"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8QF-xC-AmL" secondAttribute="bottom" id="2g0-FI-gLy"/>
+                <constraint firstItem="8QF-xC-AmL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BST-vm-Mkr"/>
+                <constraint firstItem="JIB-qQ-1te" firstAttribute="trailing" secondItem="8QF-xC-AmL" secondAttribute="trailing" id="R76-52-ksp"/>
+                <constraint firstItem="JIB-qQ-1te" firstAttribute="top" secondItem="8QF-xC-AmL" secondAttribute="top" id="SbK-Ww-Ro3"/>
+                <constraint firstAttribute="trailing" secondItem="8QF-xC-AmL" secondAttribute="trailing" id="VNQ-LJ-NVT"/>
+                <constraint firstItem="8QF-xC-AmL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jph-46-Dgi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="152" height="119"/>
+            <connections>
+                <outlet property="coverImageV" destination="8QF-xC-AmL" id="33m-eV-FCv"/>
+                <outlet property="delBtn" destination="JIB-qQ-1te" id="7Sa-jf-rtL"/>
+            </connections>
+            <point key="canvasLocation" x="106" y="94.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sc_ico_add" width="113" height="113"/>
+        <image name="sc_ico_delete" width="17" height="17"/>
+    </resources>
+</document>

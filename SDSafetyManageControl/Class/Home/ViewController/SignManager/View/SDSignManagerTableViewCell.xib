@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="KGk-i7-Jjw" customClass="SDSignManagerTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="123"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="122.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eb-cG-8St">
+                        <rect key="frame" x="12" y="45.5" width="32.5" height="31.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32.5" id="MgW-bL-49E"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5月" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slq-1C-KlC">
+                        <rect key="frame" x="49.5" y="58.5" width="30" height="13.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="6pv-9a-pib"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qdxq_ico_04" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-NG-a4X">
+                        <rect key="frame" x="89.5" y="34" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="5AD-et-UzI"/>
+                            <constraint firstAttribute="width" constant="55" id="8g1-x2-4uZ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qdlb_ico" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-e4-7QQ">
+                        <rect key="frame" x="150.5" y="34" width="15" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="vXe-uP-doY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆市九龙坡区科城路68号" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx6-6U-shG">
+                        <rect key="frame" x="169.5" y="34" width="138" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-05-08 08:34:39" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDI-El-uz5">
+                        <rect key="frame" x="150.5" y="73" width="135" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fx6-6U-shG" firstAttribute="top" secondItem="SF7-e4-7QQ" secondAttribute="top" id="14B-OE-E2s"/>
+                    <constraint firstItem="SF7-e4-7QQ" firstAttribute="leading" secondItem="4fB-NG-a4X" secondAttribute="trailing" constant="6" id="6b3-rf-Aeg"/>
+                    <constraint firstItem="pDI-El-uz5" firstAttribute="leading" secondItem="SF7-e4-7QQ" secondAttribute="leading" id="A5e-sn-WXb"/>
+                    <constraint firstItem="slq-1C-KlC" firstAttribute="leading" secondItem="3eb-cG-8St" secondAttribute="trailing" constant="5" id="Asl-oE-VjV"/>
+                    <constraint firstItem="3eb-cG-8St" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ihk-vt-CGk"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fx6-6U-shG" secondAttribute="trailing" constant="12" id="IyY-kX-EJy"/>
+                    <constraint firstItem="3eb-cG-8St" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="KHR-6n-ANc"/>
+                    <constraint firstItem="slq-1C-KlC" firstAttribute="bottom" secondItem="3eb-cG-8St" secondAttribute="bottom" constant="-5" id="Ohj-qX-pFg"/>
+                    <constraint firstItem="fx6-6U-shG" firstAttribute="leading" secondItem="SF7-e4-7QQ" secondAttribute="trailing" constant="4" id="QwR-PO-Ona"/>
+                    <constraint firstItem="pDI-El-uz5" firstAttribute="bottom" secondItem="4fB-NG-a4X" secondAttribute="bottom" id="aYj-o6-cY6"/>
+                    <constraint firstItem="SF7-e4-7QQ" firstAttribute="top" secondItem="4fB-NG-a4X" secondAttribute="top" id="b5h-Re-6Yc"/>
+                    <constraint firstItem="4fB-NG-a4X" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iJH-7P-uwX"/>
+                    <constraint firstItem="4fB-NG-a4X" firstAttribute="leading" secondItem="slq-1C-KlC" secondAttribute="trailing" constant="10" id="n0a-sJ-DZg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="coverImageV" destination="4fB-NG-a4X" id="b9x-CT-lQ3"/>
+                <outlet property="dLab" destination="3eb-cG-8St" id="IbG-wx-xAR"/>
+                <outlet property="timeLab" destination="pDI-El-uz5" id="vKj-S9-Yvw"/>
+                <outlet property="titleLab" destination="fx6-6U-shG" id="IoA-Uf-7VQ"/>
+                <outlet property="yLab" destination="slq-1C-KlC" id="wTB-rc-x5Q"/>
+            </connections>
+            <point key="canvasLocation" x="57.5" y="98.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="qdlb_ico" width="15" height="16"/>
+        <image name="qdxq_ico_04" width="113" height="113"/>
+    </resources>
+</document>

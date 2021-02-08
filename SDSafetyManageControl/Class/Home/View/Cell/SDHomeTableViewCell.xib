@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="SDHomeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="sy_ico_01" translatesAutoresizingMaskIntoConstraints="NO" id="OYN-aK-skr">
+                        <rect key="frame" x="97" y="42" width="21" height="22"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_icon_yj" translatesAutoresizingMaskIntoConstraints="NO" id="gnd-ji-bap">
+                        <rect key="frame" x="276" y="45" width="6" height="16"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="题库练习" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJe-9u-cxa">
+                        <rect key="frame" x="143" y="34" width="69.5" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="s9s-pI-Ewh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sy_line" translatesAutoresizingMaskIntoConstraints="NO" id="hTP-vn-7u1">
+                        <rect key="frame" x="107" y="91" width="166" height="7"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gnd-ji-bap" secondAttribute="trailing" constant="93" id="8mE-OI-obh"/>
+                    <constraint firstItem="WJe-9u-cxa" firstAttribute="centerY" secondItem="OYN-aK-skr" secondAttribute="centerY" id="Cl5-kS-cAa"/>
+                    <constraint firstItem="hTP-vn-7u1" firstAttribute="leading" secondItem="OYN-aK-skr" secondAttribute="leading" constant="10" id="T3L-Y1-QE9"/>
+                    <constraint firstItem="WJe-9u-cxa" firstAttribute="leading" secondItem="OYN-aK-skr" secondAttribute="trailing" constant="25" id="TAf-wH-tAc"/>
+                    <constraint firstItem="gnd-ji-bap" firstAttribute="centerY" secondItem="OYN-aK-skr" secondAttribute="centerY" id="d51-z4-Rck"/>
+                    <constraint firstItem="hTP-vn-7u1" firstAttribute="top" secondItem="WJe-9u-cxa" secondAttribute="bottom" constant="20" id="mqg-xD-kFL"/>
+                    <constraint firstItem="OYN-aK-skr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="97" id="oAY-gP-aHM"/>
+                    <constraint firstItem="OYN-aK-skr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zoX-Ce-5E6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="leftImageV" destination="OYN-aK-skr" id="b0r-5c-RkF"/>
+                <outlet property="nameLab" destination="WJe-9u-cxa" id="m9b-7g-Ztq"/>
+            </connections>
+            <point key="canvasLocation" x="96.5" y="168"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="home_icon_yj" width="6" height="16"/>
+        <image name="sy_ico_01" width="21" height="22"/>
+        <image name="sy_line" width="166" height="7"/>
+    </resources>
+</document>
